@@ -1,0 +1,31 @@
+<div class="container">
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Number</mat-label>
+      <input type="text" placeholder="Pick one number" aria-label="Number" matInput [formControl]="myControl"
+        [matAutocomplete]="auto">
+      <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+        <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+          {{option}}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+  </form>
+
+</div>
+<div class="container">
+<form [formGroup]="stateForm">
+  <mat-form-field>
+    <mat-label>States Group</mat-label>
+    <input type="text" matInput formControlName="stateGroup" required [matAutocomplete]="autoGroup">
+    <mat-autocomplete #autoGroup="matAutocomplete">
+      <mat-optgroup *ngFor="let group of stateGroupOptions | async" [label]="group.letter">
+        <mat-option *ngFor="let name of group.names" [value]="name">
+          {{name}}
+        </mat-option>
+      </mat-optgroup>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>
+
+</div>
