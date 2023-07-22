@@ -6,6 +6,7 @@ import { BontonsheetComponent } from './components/bontonsheet/bontonsheet.compo
 import { ButtontoogleComponent } from './components/buttontoogle/buttontoogle.component';
 import { CardComponent } from './components/card/card.component';
 import { ChipsComponent } from './components/chips/chips.component';
+import { ExpansionComponent } from './components/expansion/expansion.component';
 
 const routes: Routes = [
   { path: "buttons", component: ButonsComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: "tooglebutton", component: ButtontoogleComponent },
   { path: "card", component: CardComponent },
   { path: "chips", component: ChipsComponent },
+  { path: "expansion", component: ExpansionComponent },
 ];
 
 @NgModule({

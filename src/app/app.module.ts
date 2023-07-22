@@ -26,6 +26,12 @@ import { MatCardModule } from '@angular/material/card';
 //for the chips
 import { MatChipsModule } from '@angular/material/chips';
 import { ChipsComponent } from './components/chips/chips.component';
+import { ExpansionComponent } from './components/expansion/expansion.component';
+
+//expansion
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 
 
 
@@ -38,7 +44,8 @@ import { ChipsComponent } from './components/chips/chips.component';
     BontonsheetComponent,
     ButtontoogleComponent,
     CardComponent,
-    ChipsComponent
+    ChipsComponent,
+    ExpansionComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +64,10 @@ import { ChipsComponent } from './components/chips/chips.component';
     MatBottomSheetModule,
     MatButtonToggleModule,
     MatCardModule,
-    MatChipsModule
+    MatChipsModule,
+    MatNativeDateModule,
+    MatDatepickerModule,
+    MatExpansionModule
 
   ],
   providers: [],
