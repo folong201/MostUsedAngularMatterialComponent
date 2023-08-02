@@ -9,7 +9,7 @@ ing to integrate the most user anguar material componnet used inside project
 6-chips :ok
 7-datePiker :
 8-dialog :
-9-expantion pannel :
+9-expantion pannel :ok
 10-field :
 11-menu :
 12-pagination :
@@ -18,7 +18,7 @@ ing to integrate the most user anguar material componnet used inside project
 15-snackar :
 16-snackbar :
 17-sort :
-18-stepper :
+18-stepper :ok
 19-tabs: 
 20-tree :
 

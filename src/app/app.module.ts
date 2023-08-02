@@ -32,7 +32,8 @@ import { ExpansionComponent } from './components/expansion/expansion.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
-
+import { StepperComponent } from './components/stepper/stepper.component';
+import { MatStepperModule } from '@angular/material/stepper'
 
 
 
@@ -45,7 +46,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     ButtontoogleComponent,
     CardComponent,
     ChipsComponent,
-    ExpansionComponent
+    ExpansionComponent,
+    StepperComponent
   ],
   imports: [
     BrowserModule,
@@ -67,12 +69,12 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatChipsModule,
     MatNativeDateModule,
     MatDatepickerModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatStepperModule,
 
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-
 
