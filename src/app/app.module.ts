@@ -33,7 +33,10 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { StepperComponent } from './components/stepper/stepper.component';
-import { MatStepperModule } from '@angular/material/stepper'
+import { MatStepperModule } from '@angular/material/stepper';
+import { DialogComponent } from './components/dialog/dialog.component'
+import { MatDialogModule } from '@angular/material/dialog';
+import { NgIf } from '@angular/common';
 
 
 
@@ -47,7 +50,8 @@ import { MatStepperModule } from '@angular/material/stepper'
     CardComponent,
     ChipsComponent,
     ExpansionComponent,
-    StepperComponent
+    StepperComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
@@ -71,6 +75,7 @@ import { MatStepperModule } from '@angular/material/stepper'
     MatDatepickerModule,
     MatExpansionModule,
     MatStepperModule,
+    MatDialogModule,
 
   ],
   providers: [],

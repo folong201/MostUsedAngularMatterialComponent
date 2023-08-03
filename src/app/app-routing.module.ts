@@ -8,6 +8,7 @@ import { CardComponent } from './components/card/card.component';
 import { ChipsComponent } from './components/chips/chips.component';
 import { ExpansionComponent } from './components/expansion/expansion.component';
 import { StepperComponent } from './components/stepper/stepper.component';
+import { DialogComponent } from './components/dialog/dialog.component';
 
 const routes: Routes = [
   { path: "buttons", component: ButonsComponent },
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: "card", component: CardComponent },
   { path: "chips", component: ChipsComponent },
   { path: "expansion", component: ExpansionComponent },
-  {path:'stepper',component:StepperComponent}
+  {path:'stepper',component:StepperComponent},
+  {path:'dialog',component:DialogComponent}
 ];
 
 @NgModule({
